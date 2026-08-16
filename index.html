@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#14091f">
+<title>Happy Birthday Dear Pallavi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-ring"></div><p>Preparing something special…</p></div>
+
+<div class="site-shell">
+  <div class="stars"></div>
+  <div class="confetti"></div>
+
+  <main id="pages">
+    <section class="page active home" data-title="Home">
+      <div class="moon-glow"></div>
+      <div class="sparkles"></div>
+      <div class="balloon balloon-a"><span></span></div>
+      <div class="balloon balloon-b"><span></span></div>
+      <div class="balloon balloon-c"><span></span></div>
+      <div class="balloon balloon-d"><span></span></div>
+      <div class="cake-wrap">
+        <div class="cake">
+          <div class="candle"><i></i></div>
+          <div class="icing"></div>
+          <div class="layer top"></div>
+          <div class="layer mid"></div>
+          <div class="layer bottom"></div>
+          <div class="plate"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">A little celebration made just for you</p>
+        <h1>Happy Birthday<br><span>Dear Pallavi</span></h1>
+        <p class="hero-sub">May your special day sparkle with beautiful moments, warm smiles and memories worth keeping forever.</p>
+        <button class="primary-btn" onclick="goTo(1)">Open Your Birthday Surprise <b>→</b></button>
+      </div>
+      <div class="scroll-hint">Swipe / use the arrows to explore <span>↓</span></div>
+    </section>
+
+    <section class="page card-page" data-title="Greeting Card">
+      <div class="ornament top-ornament">✦　❦　✦</div>
+      <div class="floating-heart h1">♥</div><div class="floating-heart h2">♥</div>
+      <div class="card-scene">
+        <div class="envelope" id="envelope" onclick="openCard()">
+          <div class="envelope-back"></div>
+          <div class="card-letter">
+            <div class="letter-content">
+              <div class="tiny-crown">♕</div>
+              <h2>Many Many Happy<br>Returns of the Day, Devi</h2>
+              <div class="gold-line"></div>
+              <p>On this beautiful day, I wish you a birthday filled with peace, laughter and countless reasons to smile. May every new day bring you good health, genuine happiness and wonderful opportunities to grow.</p>
+              <p>May you always be surrounded by people who value you, moments that make your heart light, and dreams that slowly turn into beautiful realities.</p>
+              <p class="closing">Wishing you a truly wonderful birthday and a life ahead filled with health, happiness and endless blessings. ✨</p>
+            </div>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">♥</div>
+        </div>
+        <p class="tap-note">Tap the card to open your message</p>
+      </div>
+    </section>
+
+    <section class="page apology" data-title="A Little Apology">
+      <div class="giant-heart top-heart">♥</div>
+      <div class="giant-heart bottom-heart">♥</div>
+      <div class="apology-content">
+        <p class="section-kicker">A little honesty, wrapped in warm wishes</p>
+        <h2>One Small Apology…</h2>
+        <div class="divider">♥</div>
+        <p class="large-message">Sorry! I don't know your birth year or how many wonderful years you've completed today, but that doesn't stop me from wishing you a long, beautiful and fulfilling life.</p>
+        <p class="large-message second">May every year ahead bring you more reasons to smile, more adventures to enjoy, more dreams to chase, and the good health and happiness you truly deserve.</p>
+        <div class="signature">With the warmest birthday wishes ✨</div>
+      </div>
+    </section>
+
+    <section class="page memories" data-title="Memories">
+      <div class="memory-balloons">
+        <div class="memory-balloon up"><span>♥</span></div>
+        <div class="memory-balloon down"><span>✦</span></div>
+      </div>
+      <div class="photo-frame">
+        <div class="frame-corner tl"></div><div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div><div class="frame-corner br"></div>
+        <p class="section-kicker">A page for the memories yet to come</p>
+        <h2>May Life Give You<br><span>Beautiful Memories</span></h2>
+        <div class="gold-line"></div>
+        <p>I'm sorry I don't have your photographs or shared memories to place here. But perhaps that makes this page a little more special: it leaves room for all the wonderful moments life is still waiting to give you.</p>
+        <p>May your journey be filled with colorful days, heartfelt laughter, peaceful nights and memories so beautiful that one day you'll look back and smile.</p>
+        <div class="memory-stars">✦　✧　✦　✧　✦</div>
+      </div>
+    </section>
+
+    <section class="page finale" data-title="Final Wishes">
+      <div class="finale-glow"></div>
+      <div class="ring ring1"></div><div class="ring ring2"></div><div class="ring ring3"></div>
+      <div class="final-content">
+        <div class="crown">♕</div>
+        <p class="section-kicker">And finally…</p>
+        <h2>My Warmest Wishes<br><span>For You, Pallavi</span></h2>
+        <div class="divider">✦　♥　✦</div>
+        <p>May this birthday mark the beginning of another beautiful chapter — one filled with good health, peaceful days, genuine smiles, meaningful relationships and dreams that come true.</p>
+        <p class="final-line">May life always be kind to you, and may happiness find you wherever you go.</p>
+        <button class="primary-btn" onclick="goTo(0)">↻ Celebrate Again</button>
+        <p class="designer">Designed and Developed By- <strong>YASH RAJ TIWARI</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <nav class="nav">
+    <button class="nav-arrow" onclick="prevPage()" aria-label="Previous">‹</button>
+    <div class="dots" id="dots"></div>
+    <button class="nav-arrow" onclick="nextPage()" aria-label="Next">›</button>
+  </nav>
+
+  <div class="page-label" id="pageLabel">01 / HOME</div>
+  <footer>Copyright © 2026 Yash Raj Tiwari. All rights reserved.</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

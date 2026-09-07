@@ -56,4 +56,23 @@ button{font:inherit}
 .ring{position:absolute;border:1px solid rgba(246,216,138,.12);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);animation:expand 7s infinite}.ring1{width:300px;height:300px}.ring2{width:500px;height:500px;animation-delay:2s}.ring3{width:750px;height:750px;animation-delay:4s}
 .nav{position:fixed;z-index:20;bottom:32px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:18px}.dots{display:flex;gap:8px}.dot{width:7px;height:7px;border-radius:50%;border:1px solid var(--gold);background:transparent;cursor:pointer;transition:.3s}.dot.active{width:24px;border-radius:10px;background:var(--gold)}.nav-arrow{width:33px;height:33px;border-radius:50%;border:1px solid #ffffff33;background:#ffffff08;color:#fff;cursor:pointer;font-size:23px;line-height:20px;transition:.3s}.nav-arrow:hover{border-color:var(--gold);color:var(--gold)}.page-label{position:fixed;z-index:20;left:28px;bottom:36px;font-size:9px;letter-spacing:2px;color:#9c8c9d}.page-label:before{content:"";display:inline-block;width:28px;height:1px;background:#806c80;vertical-align:middle;margin-right:10px}footer{position:fixed;z-index:20;right:28px;bottom:36px;font-size:8px;letter-spacing:.7px;color:#776b78}
 @keyframes spin{to{transform:rotate(360deg)}}@keyframes titleIn{from{opacity:0;transform:translateY(35px);letter-spacing:14px}to{opacity:1;transform:none;letter-spacing:5px}}@keyframes float{50%{transform:translateY(-22px) rotate(2deg)}}@keyframes flicker{to{transform:scale(1.1) translateY(-2px);opacity:.8}}@keyframes bounce{50%{transform:translateY(6px)}}@keyframes pulse{50%{transform:scale(1.12);opacity:.55}}@keyframes heartFloat{50%{transform:translateY(-18px) rotate(-4deg)}}@keyframes drift{to{background-position:250px 280px,0 0}}@keyframes fall{to{background-position:0 500px,500px 0}}@keyframes expand{0%,100%{opacity:0;transform:translate(-50%,-50%) scale(.7)}50%{opacity:.5}}
+.developer-credit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.developer-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.developer-logo:hover {
+    transform: scale(1.1);
+}
 @media(max-width:700px){.page{padding:55px 5vw 100px}.balloon{transform:scale(.7)}.cake-wrap{transform:translateX(-50%) scale(.75);bottom:8%}.hero-sub{font-size:12px}.hero-content h1{font-size:42px}.card-scene{height:390px}.envelope{height:270px}.letter-content{padding:25px 22px}.letter-content h2{font-size:29px}.letter-content p{font-size:10px;line-height:1.55}.envelope.open .card-letter{transform:translateY(-110px)}.photo-frame{padding:42px 25px}.photo-frame>p:not(.section-kicker){font-size:12px;line-height:1.75}.memory-balloon{transform:scale(.65)}.top-heart{left:1%;top:9%}.bottom-heart{right:1%;bottom:8%}.page-label{left:12px;bottom:31px}.page-label:before{display:none}footer{right:12px;bottom:14px;font-size:7px}.nav{bottom:35px}.scroll-hint{display:none}}
